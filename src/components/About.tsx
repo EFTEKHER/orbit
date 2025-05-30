@@ -1,5 +1,6 @@
 import React from 'react';
 import { GraduationCap, Award, Users, Target } from 'lucide-react';
+import logo from "./logo.png"; // Adjust the path as necessary
 
 const About: React.FC = () => {
   return (
@@ -23,9 +24,9 @@ const About: React.FC = () => {
                 <div className="flex items-center mb-4">
                   <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-blue-600 mr-4 transform transition-transform duration-300 hover:scale-110">
                     <img 
-                      src="https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg" 
+                      src={logo} 
                       alt="ইফতেখার আলী ইফতি" 
-                      className="w-full h-full object-cover"
+                      className="w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-full object-cover mb-4"
                     />
                   </div>
                   <div>
