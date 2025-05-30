@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled
           ? 'py-2 glass-effect shadow-md'
-          : 'py-4 bg-transparent'
+          : 'py-3 md:py-4 bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4">
@@ -44,14 +44,14 @@ const Navbar: React.FC = () => {
             smooth={true}
             duration={500}
           >
-            <Graduation className="text-blue-600" size={32} />
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            <Graduation className="text-blue-600" size={28} />
+            <span className="text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
               অর্বিট
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
                 smooth={true}
                 duration={500}
                 offset={-70}
-                className="flex items-center space-x-1 font-medium text-slate-700 hover:text-blue-600 transition-colors duration-300 cursor-pointer"
+                className="flex items-center space-x-1 text-sm lg:text-base font-medium text-slate-700 hover:text-blue-600 transition-colors duration-300 cursor-pointer"
               >
                 {link.icon}
                 <span>{link.name}</span>
@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
               to="contact"
               smooth={true}
               duration={500}
-              className="btn-primary"
+              className="btn-primary text-sm lg:text-base py-2 px-4 md:py-3 md:px-6"
             >
               কোর্স ভর্তি
             </Link>
@@ -79,7 +79,7 @@ const Navbar: React.FC = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-slate-700 hover:text-blue-600 focus:outline-none"
+              className="text-slate-700 hover:text-blue-600 focus:outline-none p-2"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -88,8 +88,8 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Navigation Menu */}
         {isOpen && (
-          <div className="md:hidden mt-4 bg-white rounded-lg shadow-lg p-4 animated-gradient text-white">
-            <div className="flex flex-col space-y-4">
+          <div className="md:hidden mt-2 bg-white rounded-lg shadow-lg p-4 animated-gradient text-white absolute left-4 right-4">
+            <div className="flex flex-col space-y-2">
               {navLinks.map((link) => (
                 <Link
                   key={link.to}
@@ -97,7 +97,7 @@ const Navbar: React.FC = () => {
                   smooth={true}
                   duration={500}
                   offset={-70}
-                  className="flex items-center space-x-2 py-2 px-4 rounded-md hover:bg-white/10 transition-colors duration-300 cursor-pointer"
+                  className="flex items-center space-x-2 py-2 px-3 rounded-md hover:bg-white/10 transition-colors duration-300 cursor-pointer text-sm"
                   onClick={toggleMenu}
                 >
                   {link.icon}
@@ -108,7 +108,7 @@ const Navbar: React.FC = () => {
                 to="contact"
                 smooth={true}
                 duration={500}
-                className="btn-secondary bg-white/90 hover:bg-white"
+                className="btn-secondary bg-white/90 hover:bg-white text-sm py-2"
                 onClick={toggleMenu}
               >
                 কোর্স ভর্তি
