@@ -26,7 +26,7 @@ const About = () => {
                   <img 
                     src={logo}
                     alt="ইফতেখার আলী ইফতি" 
-                    className="w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-full object-cover mb-4"
+                    className="w-48 h-48 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-full object-cover mb-4"
                   />
                   <h3 className="text-xl font-semibold mb-2 text-purple-300">প্রশিক্ষক পরিচিতি</h3>
                   <p className="text-gray-300 text-center sm:text-left">
