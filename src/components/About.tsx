@@ -22,11 +22,11 @@ const About: React.FC = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-2 text-gray-900">প্রশিক্ষক পরিচিতি</h3>
                 <div className="flex items-center mb-4">
-                  <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-blue-600 mr-4 transform transition-transform duration-300 hover:scale-110">
+                  <div className="w-48 h-48  sm:w-48 sm:h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-blue-600 mr-4 transform transition-transform duration-300 hover:scale-100">
                     <img 
                       src={logo} 
                       alt="ইফতেখার আলী ইফতি" 
-                      className="w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-full object-cover mb-4"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                   <div>
