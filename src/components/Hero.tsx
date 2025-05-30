@@ -21,28 +21,28 @@ const Hero: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <div className={`w-full lg:w-1/2 transition-all duration-1000 transform ${animate ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'}`}>
             <div className="flex items-center mb-4">
-              <div className="bg-gradient-to-r from-purple-400 to-pink-400 p-0.5 rounded-md">
+              <div className="bg-gradient-to-r from-purple-900 to-pink-800 p-0.5 rounded-md">
                 <div className="bg-indigo-950 px-4 py-1 rounded-md flex items-center">
-                  <Sparkles className="w-5 h-5 text-pink-400 mr-2" />
-                  <span className="text-purple-300 text-sm">ভবিষ্যতের শিক্ষার নতুন দিগন্ত</span>
+                  <Sparkles className="w-5 h-5 text-pink-700 mr-2" />
+                  <span className="text-white text-sm">ভবিষ্যতের শিক্ষার নতুন দিগন্ত</span>
                 </div>
               </div>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-300 via-pink-300 to-purple-200">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-pink-300 to-purple-800">
               <span className="block">অর্বিট কোচিং সেন্টার</span>
-              <span className="block text-2xl md:text-3xl lg:text-4xl mt-2 text-purple-300">উৎকর্ষতার দিকে আপনার যাত্রা</span>
+              <span className="block text-2xl md:text-3xl lg:text-4xl mt-2 text-purple-800">উৎকর্ষতার দিকে আপনার যাত্রা</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-gray-300 mb-8">
-              এইচএসসি, এসএসসি এবং প্রোগ্রামিং শিক্ষার জন্য অন্যতম সেরা কোচিং সেন্টার। আমরা আপনার সাফল্যের জন্য প্রতিশ্রুতিবদ্ধ।
+            <p className="text-lg md:text-xl text-black mb-8">
+              এইচএসসি, এসএসসি এবং প্রোগ্রামিং শিক্ষার জন্য  অন্যতম সেরা কোচিং সেন্টার। আমরা আপনার সাফল্যের জন্য প্রতিশ্রুতিবদ্ধ।
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#courses" className="px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-white font-medium hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg text-center">
                 কোর্স দেখুন
               </a>
-              <a href="#contact" className="px-8 py-3 border border-purple-500 rounded-full text-white font-medium hover:bg-purple-500/10 transition-all duration-300 transform hover:-translate-y-1 text-center">
+              <a href="#contact" className="px-8 py-3 border border-purple-500 rounded-full text-black font-medium hover:bg-purple-500/10 transition-all duration-300 transform hover:-translate-y-1 text-center">
                 যোগাযোগ করুন
               </a>
             </div>
